@@ -1,1 +1,7 @@
 <{{03iri}}> a <http://rdf.biosemantics.org/o3-notes/onto/o3> .
+
+<{{03iri}}> <http://rdf.biosemantics.org/o3-notes/onto/timestamp> <{{timpeStamp}}> .
+
+<{{03iri}}> <http://rdf.biosemantics.org/o3-notes/onto/noteLink>  <{{notesLink}}> .
+
+<{{03iri}}> <http://rdf.biosemantics.org/o3-notes/onto/invitee> <{{invitee}}> .

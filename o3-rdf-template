@@ -6,4 +6,4 @@
 
 <{{o3iri}}> <http://rdf.biosemantics.org/o3-notes/onto/noteLink>  <{{notesLink}}> .
 
-<{{o3iri}}> <http://rdf.biosemantics.org/o3-notes/onto/invitee> <{{invitee}}> .
+<{{o3iri}}> <http://rdf.biosemantics.org/o3-notes/onto/invitee> <{{&invitee}}> .

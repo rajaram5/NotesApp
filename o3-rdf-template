@@ -1,9 +1,9 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<{{o3iri}}> a <http://rdf.biosemantics.org/o3-notes/onto/o3> .
+<{{&o3iri}}> a <http://rdf.biosemantics.org/o3-notes/onto/o3> .
 
-<{{o3iri}}> <http://rdf.biosemantics.org/o3-notes/onto/timestamp> "{{timpeStamp}}"^^xsd:dateTime .
+<{{&o3iri}}> <http://rdf.biosemantics.org/o3-notes/onto/timestamp> "{{timpeStamp}}"^^xsd:dateTime .
 
-<{{o3iri}}> <http://rdf.biosemantics.org/o3-notes/onto/noteLink>  <{{notesLink}}> .
+<{{&o3iri}}> <http://rdf.biosemantics.org/o3-notes/onto/noteLink>  <{{&notesLink}}> .
 
-<{{o3iri}}> <http://rdf.biosemantics.org/o3-notes/onto/invitee> <{{&invitee}}> .
+<{{&o3iri}}> <http://rdf.biosemantics.org/o3-notes/onto/invitee> <{{&invitee}}> .

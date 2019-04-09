@@ -1,6 +1,8 @@
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
 <{{03iri}}> a <http://rdf.biosemantics.org/o3-notes/onto/o3> .
 
-<{{03iri}}> <http://rdf.biosemantics.org/o3-notes/onto/timestamp> <{{timpeStamp}}> .
+<{{03iri}}> <http://rdf.biosemantics.org/o3-notes/onto/timestamp> "<{{timpeStamp}}"^^xsd:dateTime .
 
 <{{03iri}}> <http://rdf.biosemantics.org/o3-notes/onto/noteLink>  <{{notesLink}}> .
 

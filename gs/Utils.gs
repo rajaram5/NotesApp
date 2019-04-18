@@ -1,3 +1,6 @@
+/*
+Function to get SHA1 hash string of a text
+*/
 function getSHA(str){
     return Utilities
       .computeDigest(Utilities.DigestAlgorithm.SHA_1, str) // string to digested array of integers

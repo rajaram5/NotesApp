@@ -1,3 +1,7 @@
+/*
+Google sheet contants which are used in service layer function 
+*/
+
 var DATA_SHEET_NAME = "Form Responses 1";
 var TIME_STAMP_COL_NAME = "Timestamp";
 var NOTES_LINK_COL_NAME = "Link to the notes";

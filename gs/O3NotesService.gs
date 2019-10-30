@@ -28,7 +28,7 @@ function getO3NotesTriples(sheet) {
         var invitee = (data[i][inviteeCol]).toString();
         
         // Get person IRI 
-        var inviteeIRI = getPersonIri(invitee);
+        var inviteeIRI = PERSON_IRI[invitee.toLowerCase()];
       
         if (timeStamp && inviteeIRI) {
 
@@ -54,49 +54,7 @@ function getO3NotesTriples(sheet) {
     return triples;
 }
 
-// This function is not in use
-function deleteNotesRow(sheet) {
-  
-    var data = sheet.getDataRange().getValues();
-    var timeStampCol = data[0].indexOf(TIME_STAMP_COL_NAME);
-  
-  if (DELETE_ROW_AFTER_PROCESSING) {
-
-    for (i = 1; i < data.length; i++) {
-       
-        var timeStamp = (data[i][timeStampCol]).toString();
-      
-        if (timeStamp) {
-            var o3IRI = getNotesIri(timeStamp)
-            var doesNotesExistsInStore = doesResourceExists(o3IRI); 
-            Logger.log("IRI <" + o3IRI + "> exists == " + doesNotesExistsInStore);
-            
-          if(doesNotesExistsInStore) { 
-             //sheet.hideRows(i);
-          }
-            
-        }
-    }
-  }
-}
-
 // Create o3 instance iri based on timestamp
 function getNotesIri(timeStamp) {
    return O3_NOTE_BASE_IRI + getSHA(timeStamp);
-}
-
-// Map invited person string to IRI
-function getPersonIri(value) {
-
-    var iri = "";
-
-    if (value.toLowerCase() == "rr") {
-        iri = "http://rdf.biosemantics.org/person/Rajaram";
-    } else if (value.toLowerCase() == "an") {
-        iri = "http://rdf.biosemantics.org/person/Annika";
-    } else if (value.toLowerCase() == "el") {
-        iri = "http://rdf.biosemantics.org/person/Eleni";
-    }
-
-    return iri;
 }
